@@ -41,5 +41,5 @@ const CONFIG = {
         tamanoMaximoMB: 5
     },
 
-    apiEndpoint: "https://hook.us2.make.com/a2hg514idbvqr7uc9d2m8m6dwkscdb69"
+    apiEndpoint: "https://script.google.com/macros/s/AKfycbxEka_OtNgdSrgMxd1DXKi5b0clpvG2ha5Ml0KpuPVMX3Y0KTAwaiauaxFTo3cRtxip/exec"
 };
