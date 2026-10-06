@@ -61,12 +61,14 @@
                 </div>
 
                 <!-- Resumen de Precios Automático -->
-                <div class="price-summary-box">
-                    <div id="discount-info-card" style="background-color: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 8px; padding: 12px; margin-bottom: 15px; font-size: 0.85rem; color: #475569;">
+<div class="price-summary-box" style="display: block !important; width: 100% !important; box-sizing: border-box !important; padding: 16px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px;">
+
+    <!-- Renglón 1: Tarjeta Informativa de Descuentos -->
+    <div id="discount-info-card" style="width: 100%; box-sizing: border-box; background-color: #ffffff; border: 1px dashed #cbd5e1; border-radius: 8px; padding: 12px; margin-bottom: 12px; font-size: 0.85rem; color: #475569;">
         <div style="font-weight: 700; margin-bottom: 6px; color: #1e293b; display: flex; align-items: center; gap: 6px;">
             🏷️ Descuentos grupales (Solo VIP y PREMIUM)
         </div>
-        <ul style="margin: 0; padding-left: 18px; line-height: 1.5;">
+        <ul style="margin: 0; padding-left: 18px; line-height: 1.4;">
             <li id="rule-tier1"><strong>De 5 a 19 asistentes:</strong> 10% de descuento</li>
             <li id="rule-tier2"><strong>De 20 a más asistentes:</strong> 20% de descuento</li>
         </ul>
@@ -74,20 +76,24 @@
             🎉 ¡Descuento aplicado correctamente!
         </div>
     </div>
-                    <div class="price-item">
-                        <span>Precio por asistente</span>
-                        <strong id="summary-unit-price">S/ 0.00</strong>
-                    </div>
-                    <div class="price-item">
-                        <span>Cantidad</span>
-                        <strong id="summary-qty">1</strong>
-                    </div>
-                    <div class="price-item">
-                        <span>Total a pagar</span>
-                        <strong id="summary-total" style="color: #0b2545;">S/ 0.00</strong>
-                    </div>
-                </div>
 
+    <!-- Renglón 2: Desglose de Precios -->
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; width: 100%; box-sizing: border-box; border-top: 1px solid #e2e8f0; padding-top: 12px;">
+        <div class="price-item">
+            <span style="font-size: 0.8rem; color: #64748b; display: block; margin-bottom: 2px;">Precio por asistente</span>
+            <strong id="summary-unit-price" style="font-size: 1.1rem; color: #0f172a;">S/ 0.00</strong>
+        </div>
+        <div class="price-item" style="text-align: center;">
+            <span style="font-size: 0.8rem; color: #64748b; display: block; margin-bottom: 2px;">Cantidad</span>
+            <strong id="summary-qty" style="font-size: 1.1rem; color: #0f172a;">1</strong>
+        </div>
+        <div class="price-item" style="text-align: right;">
+            <span style="font-size: 0.8rem; color: #64748b; display: block; margin-bottom: 2px;">Total a pagar</span>
+            <strong id="summary-total" style="color: #0b2545; font-size: 1.25rem;">S/ 0.00</strong>
+        </div>
+    </div>
+
+</div>
                 <!-- Paso 2: Asistentes Adicionales -->
                 <div class="step-header" style="margin-top: 30px;">
                     <span class="step-number">02</span>
